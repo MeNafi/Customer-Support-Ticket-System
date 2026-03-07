@@ -22,8 +22,7 @@ const TaskBoard = ({ tasks, resolved, handleComplete }) => {
             {task.title}
           </h3>
 
-          {/* ACTION BUTTON:  */}
-            
+          {/* ACTION BUTTON:  */}  
           <button
             onClick={() => handleComplete(task)}
             className="w-full py-3 rounded-md text-white font-bold text-lg 
