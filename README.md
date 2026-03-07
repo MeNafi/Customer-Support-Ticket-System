@@ -1,16 +1,14 @@
-# React + Vite
+১. JSX কী এবং কেন ব্যবহার করা হয়?
+JSX হলো জাভাস্ক্রিপ্টের একটি সিনট্যাক্স এক্সটেনশন যা দেখতে অনেকটা HTML-এর মতো। এটি জাভাস্ক্রিপ্ট ফাইলের ভেতরেই UI-এর স্ট্রাকচার সহজে লেখার জন্য ব্যবহৃত হয়।
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+২. State এবং Props-এর মধ্যে পার্থক্য কী?
+State হলো কম্পোনেন্টের নিজস্ব ডাটা যা পরিবর্তন করা যায়। আর Props হলো এক কম্পোনেন্ট থেকে অন্য কম্পোনেন্টে পাঠানো ডাটা যা পরিবর্তন করা যায় না (Read-only)।
 
-Currently, two official plugins are available:
+৩. useState হুক কী এবং এটি কীভাবে কাজ করে?
+useState হলো একটি ফাংশন যা ফাংশনাল কম্পোনেন্টে ডাটা জমা রাখতে ব্যবহৃত হয়। এটি একটি অ্যারে রিটার্ন করে যার প্রথমটি বর্তমান ডাটা এবং দ্বিতীয়টি ডাটা পরিবর্তন করার ফাংশন।
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+৪. React-এ কম্পোনেন্টগুলোর মধ্যে ডাটা কীভাবে শেয়ার করা যায়?
+সাধারণত Lifting State Up-এর মাধ্যমে (প্যারেন্ট কম্পোনেন্টে ডাটা রেখে) অথবা বড় প্রজেক্টের ক্ষেত্রে Context API ব্যবহার করে ডাটা শেয়ার করা যায়।
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+৫. React-এ ইভেন্ট হ্যান্ডলিং কীভাবে করা হয়?
+React-এ ইভেন্টগুলো অনেকটা HTML-এর মতোই, তবে এগুলো উটপাখির মতো (CamelCase) লিখতে হয় (যেমন: onClick)। এখানে সরাসরি ফাংশনের নাম পাস করে ইভেন্ট হ্যান্ডেল করা হয়।
