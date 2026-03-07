@@ -23,6 +23,7 @@ const TicketCard = ({ ticket, handleAddTask }) => {
       </p>
 
       <div className="flex justify-between items-center mt-6">
+        
         {/* Left Side: ID and Priority */}
         <div className="flex items-center gap-3 text-[11px] font-bold tracking-wider">
           <span className="text-gray-400">#{ticket.id || "1001"}</span>
