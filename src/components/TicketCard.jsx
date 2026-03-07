@@ -10,6 +10,7 @@ const TicketCard = ({ ticket, handleAddTask }) => {
         <h3 className="font-bold text-gray-800 text-lg leading-tight max-w-[75%]">
           {ticket.title}
         </h3>
+        
         {/* Status Badge */}
         <div className="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-medium">
           <span className="w-2 h-2 bg-green-500 rounded-full"></span>
