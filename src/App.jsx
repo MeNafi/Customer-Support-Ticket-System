@@ -1,65 +1,67 @@
-import React, { useState, useEffect, Suspense, lazy } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import { useEffect, useState, Suspense } from "react";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import MainDashboard from "./components/MainDashboard";
+import Footer from "./components/Footer";
 
-// Lazy loading the dashboard content
-const MainDashboard = lazy(() => import('./components/MainDashboard'));
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const [tickets, setTickets] = useState([]);
-  const [inProgressTasks, setInProgressTasks] = useState([]);
-  const [resolvedTasks, setResolvedTasks] = useState([]);
+  // --- States ---
+  const [tickets, setTickets] = useState([]); // Available tickets
+  const [tasks, setTasks] = useState([]); // Active tasks
+  const [resolved, setResolved] = useState([]); // Completed tasks
 
-  // Fetch data from public/ticket.json
+  // Load initial data
   useEffect(() => {
-    fetch('/ticket.json')
-      .then((res) => res.json())
-      .then((data) => setTickets(data))
-      .catch((err) => console.error("Error loading tickets:", err));
+    fetch("/ticket.json")
+      .then(res => res.json())
+      .then(data => setTickets(data));
   }, []);
 
-  // Move ticket to In-Progress
-  const handleAddToProgress = (ticket) => {
-    if (inProgressTasks.find((t) => t.id === ticket.id)) {
-      toast.info("This ticket is already being processed!");
-      return;
-    }
-    setInProgressTasks([...inProgressTasks, ticket]);
-    toast.success("Ticket added to Task Status!");
+  // Move ticket from available to tasks
+  const handleAddTask = (ticket) => {
+    setTasks([...tasks, ticket]);
+    setTickets(tickets.filter(t => t.id !== ticket.id));
+    toast.success("Ticket added to task!");
   };
 
-  // Complete a task
-  const handleCompleteTask = (task) => {
-    // 1. Remove from In-Progress
-    setInProgressTasks(inProgressTasks.filter((t) => t.id !== task.id));
-    // 2. Add to Resolved List
-    setResolvedTasks([...resolvedTasks, task]);
-    // 3. Remove from the Main Ticket list
-    setTickets(tickets.filter((t) => t.id !== task.id));
-    
-    toast.success("Task marked as Completed!");
+  // Move task from active to resolved
+  const handleComplete = (task) => {
+    setTasks(tasks.filter(t => t.id !== task.id));
+    setResolved([...resolved, task]);
+    toast.success("Task completed!");
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans">
+    // Main wrapper with global background #F5F5F5
+    <div className="min-h-screen bg-[#F5F5F5] flex flex-col">
       <Navbar />
-      
-      <main className="container mx-auto px-4 py-8">
-        <Suspense fallback={<div className="text-center py-20"><span className="loading loading-spinner loading-lg"></span></div>}>
-          <MainDashboard 
+
+      {/* Hero section with status counters */}
+      <Banner 
+        inProgress={tasks.length} 
+        resolved={resolved.length} 
+      />
+
+      {/* Main layout container */}
+      <div className="flex-grow">
+        <Suspense fallback={<p className="text-center py-10">Loading...</p>}>
+          <MainDashboard
             tickets={tickets}
-            inProgress={inProgressTasks}
-            resolved={resolvedTasks}
-            onAdd={handleAddToProgress}
-            onComplete={handleCompleteTask}
+            tasks={tasks}
+            resolved={resolved}
+            handleAddTask={handleAddTask}
+            handleComplete={handleComplete}
           />
         </Suspense>
-      </main>
+      </div>
 
       <Footer />
-      <ToastContainer position="top-center" autoClose={2000} />
+      
+      {/* Global notifications */}
+      <ToastContainer position="top-right" autoClose={2000} />
     </div>
   );
 }

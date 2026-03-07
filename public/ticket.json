@@ -118,7 +118,7 @@
   },
   {
     "id": "1014",
-    "title": "API Key Expired Automatically",
+    "title": "API Key Update Required",
     "description": "Developer reports their production API key expired without prior notification, causing downtime for their app.",
     "customer": "Charlotte King",
     "priority": "HIGH PRIORITY",
