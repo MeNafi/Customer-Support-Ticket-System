@@ -12,10 +12,7 @@ const Footer = () => {
             </h2>
 
             <p className="text-sm text-gray-400 leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing
-              and typesetting industry. Lorem Ipsum has been
-              the industry's standard dummy text ever since
-              the 1500s.
+             CS — Ticket System is a streamlined support management platform built to help teams track and resolve customer issues efficiently. By organizing tickets into active tasks and maintaining a resolved history, it ensures high-priority requests are never missed.
             </p>
           </div>
 
@@ -43,7 +40,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-          © 2025 CS — Ticket System. All rights reserved.
+          © 2026 CS — Ticket System. All rights reserved. Made by @menafi
         </div>
 
       </div>
