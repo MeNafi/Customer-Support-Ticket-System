@@ -19,5 +19,4 @@ A robust and streamlined ticketing platform built with **React.js,** powered by 
 
 
 ## 🚀 Project Overview
-
-AppVerse is a modern **React-based** web application where users can explore **apps, view details,** and manage installations with a **clean and responsive UI.**
+A modern React-based ticketing system designed to bridge the gap between users and support teams. By utilizing **customized JSON data,** the application simulates a real-world environment, allowing users to browse tickets, track status updates, and manage support requests through a clean and responsive **dashboard UI.**
