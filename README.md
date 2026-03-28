@@ -25,11 +25,19 @@
 
 >The application **architecture** focuses on a **Single Source of Truth** strategy, where ticket distributions between the **Active Queue, Task Status, and Resolved List** are handled through centralized state logic to ensure **data consistency across the UI.**
 
+#### 🔍 This project focuses on:
+
+- Component-based architecture
+- JSON-based dynamic data rendering
+- State management
+- Interactive UI experience
+
 ## ✨ Key Features
-Dynamic Ticket Statistics: A gradient-styled hero section that tracks "In Progress" and "Resolved" counts in real-time.
 
-Active Workflow Logic: Moving a ticket from the master list to the "Task Status" section triggers state updates across the entire app.
+- **Dynamic Ticket Statistics :** A gradient-styled hero section that tracks **In Progress** and  **Resolved" counts in real-time**
 
-Resolution Tracking: A dedicated completion flow that migrates tickets to a "Resolved List," ensuring data integrity and clear visual feedback.
+- **Active Workflow Logic :** Moving a ticket from the master list to the **Task Status** section triggers  state updates across the entire app.
 
-Polished UX: Integrated React-Toastify for non-blocking notifications and a fully responsive grid layout.
+- **Resolution Tracking :** A dedicated completion flow that migrates tickets to a "Resolved List," ensuring data integrity and clear visual feedback.
+
+- **Polished UX :** Integrated React-Toastify for non-blocking notifications and a fully responsive grid layout.
