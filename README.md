@@ -1,6 +1,6 @@
  ## 🎫 Customer Support Ticket System
 
-A robust and streamlined ticketing platform built with **React.js,** powered by **custom JSON data structures** and using **React Router** for navigating complex support workflows.
+A high-performance **React.js** ticketing dashboard designed for real-time support management. This application transforms **custom JSON** data into an interactive workflow, allowing agents to track ticket progress, manage resolutions, and monitor live statistics with a seamless, Figma-compliant UI.
 
 ### 🎯 Live Demo: https://csticketsystem05.netlify.app/
 ## [![Netlify](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify&logoColor=white)](https://csticketsystem05.netlify.app/) 
@@ -19,4 +19,7 @@ A robust and streamlined ticketing platform built with **React.js,** powered by 
 
 
 ## 🚀 Project Overview
-A modern React-based ticketing system designed to bridge the gap between users and support teams. By utilizing **customized JSON data,** the application simulates a real-world environment, allowing users to browse tickets, track status updates, and manage support requests through a clean and responsive **dashboard UI.**
+
+A high-performance, reactive dashboard designed to manage the full lifecycle of customer support tickets. Built with React.js, the system transforms static custom JSON data into a dynamic, state-managed workflow.
+
+The application architecture focuses on a "Single Source of Truth" strategy, where ticket distributions between the Active Queue, Task Status, and Resolved List are handled through centralized state logic to ensure data consistency across the UI.
