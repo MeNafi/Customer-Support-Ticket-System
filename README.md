@@ -25,7 +25,7 @@
 
 >The application **architecture** focuses on a **Single Source of Truth** strategy, where ticket distributions between the **Active Queue, Task Status, and Resolved List** are handled through centralized state logic to ensure **data consistency across the UI.**
 
-#### 🔍 This project focuses on:
+## 🔍 This project focuses on:
 
 - Component-based architecture
 - JSON-based dynamic data rendering
