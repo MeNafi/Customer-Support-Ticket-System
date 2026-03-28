@@ -20,6 +20,6 @@ A high-performance **React.js** ticketing dashboard designed for real-time suppo
 
 ## 🚀 Project Overview
 
-A high-performance, reactive dashboard designed to manage the full lifecycle of customer support tickets. Built with React.js, the system transforms static custom JSON data into a dynamic, state-managed workflow.
+**A high-performance,** reactive dashboard designed to manage the full lifecycle of customer support tickets. Built with **React.js,** the system transforms static **custom JSON data** into a dynamic, state-managed workflow.
 
-The application architecture focuses on a "Single Source of Truth" strategy, where ticket distributions between the Active Queue, Task Status, and Resolved List are handled through centralized state logic to ensure data consistency across the UI.
+The application **architecture** focuses on a **Single Source of Truth** strategy, where ticket distributions between the **Active Queue, Task Status, and Resolved List** are handled through centralized state logic to ensure **data consistency across the UI.**
