@@ -1,9 +1,10 @@
  ## 🎫 Customer Support Ticket System
 
-A high-performance **React.js** ticketing dashboard designed for real-time support management. This application transforms **custom JSON** data into an interactive workflow, allowing agents to track ticket progress, manage resolutions, and monitor live statistics with a seamless, Figma-compliant UI.
+>A high-performance **React.js** ticketing dashboard designed for real-time support management. This application transforms **custom JSON** data into an interactive workflow, allowing agents to track ticket progress, manage resolutions, and monitor live statistics with a seamless, Figma-compliant UI.
 
+#
 ### 🎯 Live Demo: https://csticketsystem05.netlify.app/
-## [![Netlify](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify&logoColor=white)](https://csticketsystem05.netlify.app/) 
+### [![Netlify](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify&logoColor=white)](https://csticketsystem05.netlify.app/) 
   
 
 ## 🧩 Tech Stack
