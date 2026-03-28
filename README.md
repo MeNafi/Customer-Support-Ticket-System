@@ -38,6 +38,6 @@
 
 - **Active Workflow Logic :** Moving a ticket from the master list to the **Task Status** section triggers  state updates across the entire app.
 
-- **Resolution Tracking :** A dedicated completion flow that migrates tickets to a "Resolved List," ensuring data integrity and clear visual feedback.
+- **Resolution Tracking :** A dedicated completion flow that migrates tickets to a **Resolved List,** ensuring data integrity and clear visual feedback.
 
-- **Polished UX :** Integrated React-Toastify for non-blocking notifications and a fully responsive grid layout.
+- **Polished UX :** Integrated **React-Toastify** for **non-blocking notifications** and a **fully responsive grid layout.**
