@@ -1,14 +1,24 @@
-১. JSX কী এবং কেন ব্যবহার করা হয়?
-JSX হলো জাভাস্ক্রিপ্টের একটি সিনট্যাক্স এক্সটেনশন যা দেখতে অনেকটা HTML-এর মতো। এটি জাভাস্ক্রিপ্ট ফাইলের ভেতরেই UI-এর স্ট্রাকচার সহজে লেখার জন্য ব্যবহৃত হয়।
+ ## 🎫 Customer Support Ticket System
 
-২. State এবং Props-এর মধ্যে পার্থক্য কী?
-State হলো কম্পোনেন্টের নিজস্ব ডাটা যা পরিবর্তন করা যায়। আর Props হলো এক কম্পোনেন্ট থেকে অন্য কম্পোনেন্টে পাঠানো ডাটা যা পরিবর্তন করা যায় না (Read-only)।
+A robust and streamlined ticketing platform built with **React.js,** powered by **custom JSON data structures** and using **React Router** for navigating complex support workflows.
 
-৩. useState হুক কী এবং এটি কীভাবে কাজ করে?
-useState হলো একটি ফাংশন যা ফাংশনাল কম্পোনেন্টে ডাটা জমা রাখতে ব্যবহৃত হয়। এটি একটি অ্যারে রিটার্ন করে যার প্রথমটি বর্তমান ডাটা এবং দ্বিতীয়টি ডাটা পরিবর্তন করার ফাংশন।
+### 🎯 Live Demo: https://appverse05.netlify.app/
+## [![Netlify](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify&logoColor=white)](https://appverse05.netlify.app/) 
+  
 
-৪. React-এ কম্পোনেন্টগুলোর মধ্যে ডাটা কীভাবে শেয়ার করা যায়?
-সাধারণত Lifting State Up-এর মাধ্যমে (প্যারেন্ট কম্পোনেন্টে ডাটা রেখে) অথবা বড় প্রজেক্টের ক্ষেত্রে Context API ব্যবহার করে ডাটা শেয়ার করা যায়।
 
-৫. React-এ ইভেন্ট হ্যান্ডলিং কীভাবে করা হয়?
-React-এ ইভেন্টগুলো অনেকটা HTML-এর মতোই, তবে এগুলো (CamelCase) লিখতে হয় (যেমন: onClick)। এখানে সরাসরি ফাংশনের নাম পাস করে ইভেন্ট হ্যান্ডেল করা হয়।
+## 🧩 Tech Stack
+
+<p align="left">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript"/>
+  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC"/>
+  <img src="https://img.shields.io/badge/DaisyUI-5A0EF8?style=for-the-badge"/> 
+</p>
+
+
+## 🚀 Project Overview
+
+AppVerse is a modern **React-based** web application where users can explore **apps, view details,** and manage installations with a **clean and responsive UI.**
