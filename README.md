@@ -19,7 +19,6 @@
 </p>
 
 
-
 ## 🚀 Project Overview
 
 >**A high-performance,** reactive dashboard designed to manage the full lifecycle of customer support tickets. Built with **React.js,** the system transforms static **custom JSON data** into a dynamic, state-managed workflow.
