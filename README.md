@@ -1,6 +1,5 @@
  ## 🎫 Customer Support Ticket System
 
-
 >A high-performance **React.js** ticketing dashboard designed for real-time support management. This application transforms **custom JSON** data into an interactive workflow, allowing agents to track ticket progress, manage resolutions, and monitor live statistics with a seamless, Figma-compliant UI.
 
 #
